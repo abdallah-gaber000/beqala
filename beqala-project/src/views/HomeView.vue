@@ -33,9 +33,8 @@
 .main {
   /* margin-right: 0px; */
   width: 100%;
-  height: 720px;
+  height: 100vh;
   border-radius: 1px solid black;
-  margin-bottom: 10px;
   background-image: linear-gradient(to top right, #60c68d, #3e7eaf);
 }
 .navbar {
@@ -71,11 +70,13 @@ span {
 .font {
   position: absolute;
   left: 40%;
-  top: 70%;
+  top: 80%;
 }
 .img {
   background-image: url("https://static.yellowpages.ca/ypca/ypui-6.69.0.0-20220823.0703/resources/images/homeBanner/ypca_cover_desktop.svg");
   background-repeat: no-repeat;
   /* background-size: cover; */
+  position: absolute;
+  bottom: 30%;
 }
 </style>
