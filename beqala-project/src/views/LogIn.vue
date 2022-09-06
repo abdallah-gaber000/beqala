@@ -1,21 +1,38 @@
 <template>
-  <div class="login grid grid-cols-1 justify-items-center">
-    <nav>
-      <label>Enter E-mail</label>
-      <br />
-      <input type="text" name="text" placeholder="Enter E-mail" />
-      <br />
-      <label>Enter Password</label>
-      <br />
-      <input type="Password" name="text" placeholder="Enter Password" />
-      <br />
-      <button>LogIn</button>
-    </nav>
+  <div class="Log flex items-center justify-center">
+    <h2><router-link to="/">𝑩𝑬𝑸𝑨𝑳𝑨.𝑪𝑶</router-link></h2>
+    <br />
+    <div class="login grid grid-cols-1 justify-items-center">
+      <nav>
+        <br />
+        <input type="text" name="text" placeholder="Enter E-mail" />
+        <br />
+        <br />
+        <input type="Password" name="text" placeholder="Enter Password" />
+        <br />
+        <button>LogIn</button>
+      </nav>
+    </div>
   </div>
 </template>
 <style scoped>
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h2 {
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  top: 30px;
+  left: 20px;
+}
+.Log {
+  height: 100vh;
+  background-color: #1c1a24;
+}
 nav {
-  /* border: 1px solid red; */
   width: 100%;
   height: 50%;
   margin: 20%;
@@ -24,23 +41,18 @@ nav {
 .login {
   width: 50%;
   height: 60vh;
-  margin: 10%;
-  margin-left: 20%;
   border-radius: 20px;
   border: black;
   background-image: linear-gradient(to top right, #60c68d, #3e7eaf);
-}
-label {
-  /* border: 1px solid red; */
-  margin-top: 5%;
-  margin-right: 20%;
-  font-size: 20px;
+  animation-name: example;
+  animation-duration: 4s;
 }
 input {
   width: 40%;
   height: 15%;
   border: 1px solid black;
   font-size: 20px;
+  border-radius: 10px;
 }
 button {
   border-radius: 10px;
@@ -48,5 +60,15 @@ button {
   width: 100px;
   height: 30px;
   margin-top: 3%;
+}
+@keyframes example {
+  from {
+    opacity: 0;
+    transform: perspective(0);
+  }
+  to {
+    opacity: 1;
+    transform: perspective(20);
+  }
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
-  <div class="main">
+  <div class="main w-full h-full">
     <nav class="navbar grid grid-cols-2 justify-items-center items-center">
-      <span>𝑩𝑬𝑸𝑨𝑳𝑨.𝑪𝑶</span>
+      <span><router-link to="/">𝑩𝑬𝑸𝑨𝑳𝑨.𝑪𝑶</router-link></span>
       <ul class="grid grid-cols-2 ul justify-center">
         <li><router-link to="/LogIn">LogIn</router-link></li>
         <li><router-link to="/Join">Join</router-link></li>
@@ -10,48 +10,51 @@
     <nav class="input">
       <input type="text" name="text" placeholder="What?" class="what" />
       <input type="text" name="text" placeholder="Where?" class="where" />
+      <button type="submit">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
     </nav>
     <nav class="router">
       <router-link to="/resturant">Resturant</router-link> |
       <router-link to="/about">Medical Clinics</router-link>
       <router-view />
     </nav>
+    <nav class="img w-full h-36"></nav>
     <nav class="logo">
-      <span class="font">𝑩𝑬𝑸𝑨𝑳𝑨.𝑪𝑶</span>
+      <span class="font"><router-link to="/">𝑩𝑬𝑸𝑨𝑳𝑨.𝑪𝑶</router-link></span>
     </nav>
   </div>
 </template>
-<style>
+<style scoped>
+/* * {
+  padding: 0;
+  margin: 0;
+} */
 .main {
-  margin-right: 0px;
+  /* margin-right: 0px; */
   width: 100%;
-  height: 700px;
+  height: 720px;
   border-radius: 1px solid black;
+  margin-bottom: 10px;
   background-image: linear-gradient(to top right, #60c68d, #3e7eaf);
-  margin-top: 10px;
 }
 .navbar {
-  /* border: 1px solid red; */
   height: 100px;
-  width: 100%;
 }
 span {
   font-size: 50px;
 }
 .ul {
   width: 30%;
-  /* border: 1px solid red; */
   float: right;
   font-size: 20px;
 }
 .input {
-  /* border: 1px solid red; */
   padding-top: 100px;
   padding-left: 20%;
   font-size: 30px;
 }
 .router {
-  /* border: 1px solid red; */
   padding-left: 35%;
   font-size: 30px;
 }
@@ -63,47 +66,16 @@ span {
   margin-left: 10px;
 }
 .logo {
-  /* border: 1px solid red; */
-  padding: 10% 40%;
   font-size: 70px;
 }
-@media screen and (max-width: 1024px) {
-  .navbar {
-    /* border: 1px solid red; */
-    height: 100px;
-    width: 100%;
-  }
-  span {
-    font-size: 50px;
-  }
-  .ul {
-    width: 30%;
-    /* border: 1px solid red; */
-    float: right;
-    font-size: 20px;
-  }
-  .input {
-    /* border: 1px solid red; */
-    padding-top: 100px;
-    padding-left: 20%;
-    font-size: 30px;
-  }
-  .router {
-    /* border: 1px solid red; */
-    padding-left: 35%;
-    font-size: 30px;
-  }
-  .what {
-    border: 1px solid black;
-  }
-  .where {
-    border: 1px solid black;
-    margin-left: 10px;
-  }
-  .logo {
-    /* border: 1px solid red; */
-    padding: 10% 40%;
-    font-size: 70px;
-  }
+.font {
+  position: absolute;
+  left: 40%;
+  top: 70%;
+}
+.img {
+  background-image: url("https://static.yellowpages.ca/ypca/ypui-6.69.0.0-20220823.0703/resources/images/homeBanner/ypca_cover_desktop.svg");
+  background-repeat: no-repeat;
+  /* background-size: cover; */
 }
 </style>
