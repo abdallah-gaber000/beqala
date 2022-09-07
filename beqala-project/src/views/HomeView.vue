@@ -35,7 +35,8 @@
   width: 100%;
   height: 100vh;
   border-radius: 1px solid black;
-  background-image: linear-gradient(to top right, #60c68d, #3e7eaf);
+  /* background-image: linear-gradient(to top right, #efc2d7, #9895ef); */
+  background-color: #ffcd00;
 }
 .navbar {
   height: 100px;
@@ -71,6 +72,11 @@ span {
   position: absolute;
   left: 40%;
   top: 80%;
+}
+button {
+  background-color: black;
+  width: 5%;
+  border-radius: 1px solid black;
 }
 .img {
   background-image: url("https://static.yellowpages.ca/ypca/ypui-6.69.0.0-20220823.0703/resources/images/homeBanner/ypca_cover_desktop.svg");

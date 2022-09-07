@@ -19,8 +19,9 @@ h2 {
   position: absolute;
   color: white;
   font-size: 40px;
-  top: 30px;
+  top: 70px;
   left: 20px;
+  /* animation: spin 4s linear; */
 }
 nav {
   /* border: 1px solid red; */
@@ -72,4 +73,9 @@ button {
     transform: perspective(20);
   }
 }
+/* @keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+} */
 </style>

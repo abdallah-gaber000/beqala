@@ -25,7 +25,7 @@ h2 {
   position: absolute;
   color: white;
   font-size: 40px;
-  top: 30px;
+  top: 70px;
   left: 20px;
 }
 .Log {
