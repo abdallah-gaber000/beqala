@@ -27,7 +27,8 @@
   height: 15vh;
   /* background-image: linear-gradient(to top right, #60c68d, #3e7eaf); */
   /* border: 1px solid red; */
-  background-color: #ffcd00;
+  /* background-color: #ffcd00; */
+  background-color: #145369;
 }
 .hedar {
   /* border: 1px solid red; */
@@ -41,6 +42,7 @@
 }
 span {
   font-size: 30px;
+  color: white;
 }
 input {
   /* padding-left: 35%; */
@@ -65,10 +67,15 @@ button {
   width: 30%;
   text-align: center;
   border-radius: 5px;
+  color: white;
+}
+.log:hover {
+  background-color: black;
 }
 .RouterNav {
   font-size: 20px;
   position: relative;
   bottom: 15px;
+  color: white;
 }
 </style>

@@ -6,6 +6,8 @@
         <input type="text" name="text" placeholder="Enter E-mail" />
         <br />
         <button>Sign up</button>
+        <br />
+        <router-link to="/LogIn" class="Log text-2xl">LogIn</router-link>
       </nav>
     </div>
   </div>
@@ -14,6 +16,7 @@
 .signin {
   height: 100vh;
   background-color: #1c1a24;
+  /* background-color: white; */
 }
 h2 {
   position: absolute;
@@ -39,7 +42,9 @@ nav {
   border: black;
   position: absolute;
   top: 20%;
-  background-image: linear-gradient(to top right, #60c68d, #3e7eaf);
+  /* background-image: linear-gradient(to top right, #60c68d, #3e7eaf); */
+  /* background-color: #145369; */
+  background-color: #2162a3;
   animation-name: example;
   animation-duration: 4s;
 }

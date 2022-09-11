@@ -5,12 +5,26 @@
     <div class="login grid grid-cols-1 justify-items-center">
       <nav>
         <br />
-        <input type="text" name="text" placeholder="Enter E-mail" />
+        <form>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter E-mail"
+            required
+          />
+          <br />
+          <br />
+          <input
+            type="Password"
+            name="password"
+            placeholder="Enter Password"
+            required
+          />
+          <br />
+          <button>LogIn</button>
+        </form>
         <br />
-        <br />
-        <input type="Password" name="text" placeholder="Enter Password" />
-        <br />
-        <button>LogIn</button>
+        <router-link to="/Join" class="Join">Join</router-link>
       </nav>
     </div>
   </div>
@@ -24,13 +38,15 @@
 h2 {
   position: absolute;
   color: white;
+  color: #1c1a24;
   font-size: 40px;
   top: 70px;
   left: 20px;
 }
 .Log {
   height: 100vh;
-  background-color: #1c1a24;
+  /* background-color: #1c1a24; */
+  /* background-color: whh; */
 }
 nav {
   width: 100%;
@@ -43,9 +59,11 @@ nav {
   height: 60vh;
   border-radius: 20px;
   border: black;
-  background-image: linear-gradient(to top right, #60c68d, #3e7eaf);
+  /* background-image: linear-gradient(to top right, #60c68d, #3e7eaf); */
+  background-color: #2162a3;
+  background-color: darkturquoise;
   animation-name: example;
-  animation-duration: 4s;
+  animation-duration: 2s;
 }
 input {
   width: 40%;
@@ -70,5 +88,9 @@ button {
     opacity: 1;
     transform: perspective(20);
   }
+}
+.Join {
+  font-size: 25px;
+  list-style: none;
 }
 </style>
