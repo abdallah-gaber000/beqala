@@ -2,7 +2,9 @@
   <div id="app">
     <div class="parent">
       <div class="nav">
-        <span><router-link to="/">𝑩𝑬𝑸𝑨𝑳𝑨.𝑪𝑶</router-link></span>
+        <span>
+          <router-link to="/" class="text-3xl">𝑩𝑬𝑸𝑨𝑳𝑨.𝑪𝑶</router-link></span
+        >
         <div class="main">
           <input
             type="text"
@@ -18,14 +20,14 @@
           />
         </div>
         <ul>
-          <router-link to="/LogIn" class="log">LogIn</router-link>
+          <router-link to="/LogIn" class="log text-2xl">LogIn</router-link>
         </ul>
       </div>
 
       <div class="option">
-        <ul>
-          <li>Restaurante</li>
-          <li>Medical Clinics</li>
+        <ul class="text-2xl">
+          <li><router-link to="/resturant">𝑹𝑬𝑺𝑻𝑼𝑹𝑨𝑵𝑻</router-link> |</li>
+          <li><router-link to="/about">𝑴𝑬𝑫𝑰𝑪𝑨𝑳 𝑪𝑳𝑰𝑵𝑰𝑪𝑺</router-link></li>
         </ul>
       </div>
     </div>
@@ -38,7 +40,8 @@
   padding: 0;
 }
 .parent {
-  background-color: #ffcd00;
+  /* background-color: #ffcd00; */
+  background-image: url(../assets/photo-1553095066-5014bc7b7f2d.jpeg);
 }
 
 .nav {
@@ -84,6 +87,7 @@
 .option ul {
   display: flex;
   flex-direction: row;
+  font-size: 20px;
 }
 
 .option li {
@@ -91,5 +95,11 @@
   list-style-type: none;
   font-size: 20px;
   font-weight: bold;
+}
+ul {
+  color: white;
+}
+span {
+  color: white;
 }
 </style>

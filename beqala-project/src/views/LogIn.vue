@@ -193,4 +193,8 @@ body {
     transform: perspective(20);
   }
 }
+.Join {
+  font-size: 25px;
+  list-style: none;
+}
 </style>

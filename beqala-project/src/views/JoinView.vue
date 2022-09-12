@@ -18,6 +18,7 @@
             <span class="button_text">Sign up</span>
           </button>
         </form>
+        <router-link to="/LogIn" class="Log">LogIn</router-link>
       </div>
       <div class="screen_background">
         <span class="screen_background_shape screen_background_shape4"></span>
