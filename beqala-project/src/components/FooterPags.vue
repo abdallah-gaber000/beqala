@@ -3,7 +3,9 @@
     <div class="content flex">
       <div class="image"><P>150*150</P></div>
       <div class="content1">
-        <h2>Restaurant_name</h2>
+        <h2>
+          <router-link to="/RestaurantDetails"> Restaurant_name</router-link>
+        </h2>
         <p>address</p>
         <p>description</p>
         <div class="content3 flex">
