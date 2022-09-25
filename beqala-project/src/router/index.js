@@ -4,7 +4,7 @@ import HomeView from "../views/HomeView.vue";
 import ResturantView from "../views/ResturantView.vue";
 import LogIn from "../views/LogIn.vue";
 import JoinView from "../views/JoinView.vue";
-import AddView from "../views/AddView.vue";
+import RestaurantDetails from "../views/RestaurantDetails.vue";
 
 Vue.use(VueRouter);
 
@@ -39,9 +39,9 @@ const routes = [
     component: JoinView,
   },
   {
-    path: "/Add",
-    name: "AddPlace",
-    component: AddView,
+    path: "/RestaurantDetails",
+    name: "RestaurantDetails",
+    component: RestaurantDetails,
   },
 ];
 
