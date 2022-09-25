@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="parent flex justify-center">
     <div class="content flex">
       <div class="image"><P>150*150</P></div>
@@ -25,18 +25,20 @@
   margin: 20px;
   width: 150px;
   height: 150px;
-  background-color: rgb(233, 240, 22);
+  background-color: rgba(0, 22, 60, 255);
 }
 .image p {
   font-size: 20px;
   padding-top: 30px;
   padding-left: 10px;
+  color: white;
 }
 .content3 div {
   margin-top: 50px;
+  color: white;
 }
 .content3 .phone {
-  background-color: #ffcd00;
+  background-color: #00163c;
   /* border: 2px solid black; */
   box-shadow: 5px 10px 18px #888888;
   border-radius: 5px;
@@ -45,7 +47,7 @@
 }
 .content3 .open {
   margin-left: 30px;
-  background-color: #ffcd00;
+  background-color: #00163c;
   /* border: 2px solid black; */
   box-shadow: 5px 10px 18px #888888;
   border-radius: 5px;
@@ -69,4 +71,4 @@
     transform: perspective(20);
   }
 }
-</style>
+</style> -->
